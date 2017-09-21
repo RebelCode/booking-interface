@@ -30,7 +30,7 @@ class CouldNotTransitionExceptionInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getBooking()
-            ->getTransition()
+            ->getTransitionKey()
             ->getTransitionData()
             ->getMessage()
             ->getCode()

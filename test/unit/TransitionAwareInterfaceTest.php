@@ -29,7 +29,8 @@ class TransitionAwareInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getTransition();
+                     ->getTransitionKey()
+                     ->getTransitionData();
 
         return $mock->new();
     }
