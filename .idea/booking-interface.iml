@@ -5,17 +5,23 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="RebelCode\Bookings\" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/nbproject" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/data-container-interface" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/dhii/exception-interface" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/container" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="PHP" type="php">
         <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/dhii/data-container-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/exception-interface" />
+          <root url="file://$MODULE_DIR$/vendor/psr/container" />
         </CLASSES>
         <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/dhii/data-container-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/exception-interface" />
+          <root url="file://$MODULE_DIR$/vendor/psr/container" />
         </SOURCES>
       </library>
     </orderEntry>
