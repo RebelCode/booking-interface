@@ -22,10 +22,10 @@ interface TransitionCapableInterface
      * @param string|Stringable $transition The transition code.
      * @param array|Container   $data       Optional data to use for transitioning.
      *
-     * @return TransitionCapableInterface The instance with the completed transition - may not be the same instance.
-     *
      * @throws CouldNotTransitionExceptionInterface If the transition failed or was aborted.
-     * @throws BookingExceptionInterface If an error was encountered during transition.
+     * @throws BookingExceptionInterface            If an error was encountered during transition.
+     *
+     * @return TransitionCapableInterface The instance with the completed transition - may not be the same instance.
      */
     public function transition($transition, $data = array());
 }
