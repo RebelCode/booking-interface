@@ -4,6 +4,8 @@ namespace RebelCode\Bookings;
 
 use Dhii\Util\String\StringableInterface as Stringable;
 use Psr\Container\ContainerInterface as Container;
+use RebelCode\Bookings\Exception\BookingExceptionInterface;
+use RebelCode\Bookings\Exception\CouldNotTransitionExceptionInterface;
 
 /**
  * Something that can transition to achieve to a new status.
@@ -21,6 +23,9 @@ interface TransitionCapableInterface
      * @param array|Container   $data       Optional data to use for transitioning.
      *
      * @return TransitionCapableInterface The instance with the completed transition - may not be the same instance.
+     *
+     * @throws CouldNotTransitionExceptionInterface If the transition failed or was aborted.
+     * @throws BookingExceptionInterface If an error was encountered during transition.
      */
     public function transition($transition, $data = array());
 }
