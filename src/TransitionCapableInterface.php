@@ -3,6 +3,7 @@
 namespace RebelCode\Bookings;
 
 use Dhii\Util\String\StringableInterface as Stringable;
+use Psr\Container\ContainerInterface as Container;
 
 /**
  * Something that can transition to achieve to a new status.
@@ -17,7 +18,7 @@ interface TransitionCapableInterface
      * @since [*next-version*]
      *
      * @param string|Stringable $transition The transition code.
-     * @param array             $data
+     * @param array|Container   $data       Optional data to use for transitioning.
      *
      * @return TransitionCapableInterface The instance with the completed transition - may not be the same instance.
      */

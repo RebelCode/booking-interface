@@ -2,6 +2,7 @@
 
 namespace RebelCode\Bookings\Exception;
 
+use Psr\Container\ContainerInterface as Container;
 use RebelCode\Bookings\TransitionAwareInterface;
 
 /**
@@ -18,7 +19,7 @@ interface CouldNotTransitionExceptionInterface extends
      *
      * @since [*next-version*]
      *
-     * @return array The transition data.
+     * @return array|Container The transition data.
      */
     public function getTransitionData();
 }
