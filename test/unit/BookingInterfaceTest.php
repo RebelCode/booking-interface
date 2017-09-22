@@ -65,7 +65,7 @@ class BookingInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'RebelCode\Bookings\TransitionCapableInterface',
+            'RebelCode\Bookings\TransitionableInterface',
             $subject,
             'Test subject does not extend parent interface.'
         );

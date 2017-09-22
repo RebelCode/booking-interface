@@ -10,6 +10,6 @@ namespace RebelCode\Bookings;
 interface BookingInterface extends
     PeriodInterface,
     StatusAwareInterface,
-    TransitionCapableInterface
+    TransitionableInterface
 {
 }
