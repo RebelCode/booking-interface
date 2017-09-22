@@ -23,7 +23,7 @@ interface TransitionCapableInterface
      * @throws CouldNotTransitionExceptionInterface If the transition failed or was aborted.
      * @throws BookingExceptionInterface            If an error was encountered during transition.
      *
-     * @return TransitionCapableInterface The instance with the completed transition - may not be the same instance.
+     * @return StatusAwareInterface The instance with the new status - may not be the same instance.
      */
     public function transition($transition);
 }
