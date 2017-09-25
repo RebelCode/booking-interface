@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1bcb0a6ed67c8ac46d14baf6fd12bfb",
+    "content-hash": "6ea250ed6fa35a90233482af099f8d2c",
     "packages": [
         {
             "name": "dhii/data-container-interface",
@@ -186,6 +186,48 @@
                 "psr"
             ],
             "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "rebelcode/time-interface",
+            "version": "dev-task/initial-interfaces",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RebelCode/time-interface.git",
+                "reference": "ac7646aec91e851d65f8f5250578ccc8e784af1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RebelCode/time-interface/zipball/ac7646aec91e851d65f8f5250578ccc8e784af1e",
+                "reference": "ac7646aec91e851d65f8f5250578ccc8e784af1e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RebelCode\\Time\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "RebelCode",
+                    "email": "dev@rebelcode.com"
+                }
+            ],
+            "description": "Interfaces for dealing with time.",
+            "time": "2017-09-25 07:45:50"
         }
     ],
     "packages-dev": [
@@ -2035,6 +2077,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "rebelcode/time-interface": 20,
         "dhii/php-cs-fixer-config": 20
     },
     "prefer-stable": true,
