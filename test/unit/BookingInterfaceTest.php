@@ -31,6 +31,7 @@ class BookingInterfaceTest extends TestCase
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getStart()
             ->getEnd()
+            ->getDuration()
             ->getStatus()
             ->transition();
 
@@ -53,7 +54,7 @@ class BookingInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'RebelCode\Bookings\PeriodInterface',
+            'RebelCode\Time\PeriodInterface',
             $subject,
             'Test subject does not extend parent interface.'
         );

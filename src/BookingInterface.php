@@ -2,6 +2,8 @@
 
 namespace RebelCode\Bookings;
 
+use RebelCode\Time\PeriodInterface;
+
 /**
  * Something that represents a booking.
  *
