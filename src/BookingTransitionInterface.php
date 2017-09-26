@@ -21,7 +21,7 @@ use Dhii\Util\String\StringableInterface;
  *
  * @since [*next-version*]
  */
-interface BookingStatusTransitionInterface extends
+interface BookingTransitionInterface extends
     StringableInterface,
     BookingAwareInterface
 {
