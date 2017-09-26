@@ -78,7 +78,7 @@ class BookingStatusTransitionInterfaceTest extends TestCase
      */
     public function testCanBeCastToString()
     {
-        $string  = uniqid('string-cast-');
+        $string = uniqid('string-cast-');
         $subject = $this->mock(static::TEST_SUBJECT_CLASSNAME)
                      ->getBooking()
                      ->get()
