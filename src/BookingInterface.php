@@ -2,23 +2,25 @@
 
 namespace RebelCode\Bookings;
 
-use Dhii\Machine\ReadableStateMachineInterface;
+use Dhii\Machine\StatusAwareInterface;
 use RebelCode\Time\PeriodInterface;
 
 /**
  * Something that represents a booking.
  *
- * A booking is a period of time that is reserves something, be it a service or resource.
+ * A booking is a period of time that is reserves something for that period of time.
  *
- * This interface provides the foundation for all booking-related logic, by making the booking a state machine.
- * By using the {@link transition()} method, a booking can change its status (see {@see getStatus()}) and undergo
- * changes. These changes can involve other logical components, which together can make up the booking logic of your
- * application.
+ * This interface provides the foundation for all booking-related logic, by making the booking aware of a status.
+ * While being very simple in principle, the status allows booking implementations to use it as a mechanism for
+ * experiencing changes, operations or updates. In other words, transition to new states.
+ *
+ * Separate objects can control and/or listen to the transitions of a booking, allowing them to influence the
+ * transition or take further action.
  *
  * @since [*next-version*]
  */
 interface BookingInterface extends
     PeriodInterface,
-    ReadableStateMachineInterface
+    StatusAwareInterface
 {
 }

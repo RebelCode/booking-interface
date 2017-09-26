@@ -61,7 +61,7 @@ class BookingInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'Dhii\Machine\StateMachineInterface',
+            'Dhii\Machine\StatusAwareInterface',
             $subject,
             'Test subject does not extend parent interface.'
         );
