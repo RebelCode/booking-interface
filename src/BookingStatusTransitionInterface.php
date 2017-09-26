@@ -3,14 +3,12 @@
 namespace RebelCode\Bookings;
 
 use Dhii\Util\String\StringableInterface;
-use Psr\Container\ContainerInterface;
 
 /**
  * Something that represents a transition for a booking status.
  *
  * Objects that implement this interface can be used as argument for {@link BookingInterface::transition()}.
- * Therefore, the {@link __toString()} method SHOULD return a valid transition key. Any other arbitrary data can be
- * attached to the transition and can be later retrieved via {@link ContainerInterface::get()}.
+ * Therefore, the {@link __toString()} method SHOULD return a valid transition key.
  *
  * The {@link getBooking()} method allows external components to obtain the booking undergoing transition directly
  * from the transition instance.
@@ -25,7 +23,6 @@ use Psr\Container\ContainerInterface;
  */
 interface BookingStatusTransitionInterface extends
     StringableInterface,
-    BookingAwareInterface,
-    ContainerInterface
+    BookingAwareInterface
 {
 }

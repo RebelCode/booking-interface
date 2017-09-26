@@ -53,12 +53,6 @@ class BookingStatusTransitionInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'Psr\Container\ContainerInterface',
-            $subject,
-            'Test subject does not implement parent interface.'
-        );
-
-        $this->assertInstanceOf(
             'RebelCode\Bookings\BookingAwareInterface',
             $subject,
             'Test subject does not implement parent interface.'
@@ -81,8 +75,6 @@ class BookingStatusTransitionInterfaceTest extends TestCase
         $string = uniqid('string-cast-');
         $subject = $this->mock(static::TEST_SUBJECT_CLASSNAME)
                      ->getBooking()
-                     ->get()
-                     ->has()
                      ->__toString($string)
                      ->new();
 
