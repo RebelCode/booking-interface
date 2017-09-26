@@ -33,7 +33,8 @@ class BookingInterfaceTest extends TestCase
             ->getEnd()
             ->getDuration()
             ->getStatus()
-            ->transition();
+            ->transition()
+            ->canTransition();
 
         return $mock->new();
     }
@@ -60,13 +61,7 @@ class BookingInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'RebelCode\Bookings\StatusAwareInterface',
-            $subject,
-            'Test subject does not extend parent interface.'
-        );
-
-        $this->assertInstanceOf(
-            'RebelCode\Bookings\TransitionableInterface',
+            'Dhii\Machine\StateMachineInterface',
             $subject,
             'Test subject does not extend parent interface.'
         );
