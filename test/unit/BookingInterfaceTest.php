@@ -2,8 +2,8 @@
 
 namespace RebelCode\Bookings\UnitTest;
 
-use Xpmock\TestCase;
 use RebelCode\Bookings\BookingInterface as TestSubject;
+use Xpmock\TestCase;
 
 /**
  * Tests {@see TestSubject}.
@@ -29,12 +29,10 @@ class BookingInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getStart()
-            ->getEnd()
-            ->getDuration()
-            ->getStatus()
-            ->transition()
-            ->canTransition();
+                     ->getStart()
+                     ->getEnd()
+                     ->getDuration()
+                     ->getStatus();
 
         return $mock->new();
     }
@@ -56,12 +54,6 @@ class BookingInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             'RebelCode\Time\PeriodInterface',
-            $subject,
-            'Test subject does not extend parent interface.'
-        );
-
-        $this->assertInstanceOf(
-            'Dhii\Machine\StatusAwareInterface',
             $subject,
             'Test subject does not extend parent interface.'
         );

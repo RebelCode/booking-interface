@@ -2,7 +2,7 @@
 
 namespace RebelCode\Bookings;
 
-use Dhii\Machine\StatusAwareInterface;
+use Dhii\Util\String\StringableInterface as Stringable;
 use RebelCode\Time\PeriodInterface;
 
 /**
@@ -12,15 +12,21 @@ use RebelCode\Time\PeriodInterface;
  *
  * This interface provides the foundation for all booking-related logic, by making the booking aware of a status.
  * While being very simple in principle, the status allows booking implementations to use it as a mechanism for
- * experiencing changes, operations or updates. In other words, transition to new states.
+ * applying and signalling changes.
  *
- * Separate objects can control and/or listen to the transitions of a booking, allowing them to influence the
- * transition or take further action.
+ * Separate objects can control and/or listen to the status change of a booking, allowing them to influence the
+ * booking modifications or take further action.
  *
  * @since [*next-version*]
  */
-interface BookingInterface extends
-    PeriodInterface,
-    StatusAwareInterface
+interface BookingInterface extends PeriodInterface
 {
+    /**
+     * Retrieves the booking status for this instance.
+     *
+     * @since [*next-version*]
+     *
+     * @return string|Stringable The status.
+     */
+    public function getStatus();
 }
