@@ -11,11 +11,8 @@ use RebelCode\Time\PeriodInterface;
  * A booking is a period of time that is reserves something for that period of time.
  *
  * This interface provides the foundation for all booking-related logic, by making the booking aware of a status.
- * While being very simple in principle, the status allows booking implementations to use it as a mechanism for
- * applying and signalling changes.
- *
- * Separate objects can control and/or listen to the status change of a booking, allowing them to influence the
- * booking modifications or take further action.
+ * While being a very simple concept, the status signifies the current state of the booking and can be used to
+ * signal changes made to the booking.
  *
  * @since [*next-version*]
  */
