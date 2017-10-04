@@ -38,12 +38,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
       <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
       <path value="$PROJECT_DIR$/vendor/dhii/stringable-interface" />
-      <path value="$PROJECT_DIR$/vendor/dhii/exception-interface" />
-      <path value="$PROJECT_DIR$/vendor/psr/container" />
-      <path value="$PROJECT_DIR$/vendor/dhii/data-container-interface" />
       <path value="$PROJECT_DIR$/vendor/rebelcode/time-interface" />
-      <path value="$PROJECT_DIR$/vendor/dhii/data-key-value-aware-interface" />
-      <path value="$PROJECT_DIR$/vendor/dhii/machine-state-machine-interface" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.3.0" />

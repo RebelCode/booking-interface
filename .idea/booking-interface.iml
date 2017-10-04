@@ -14,10 +14,6 @@
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/codeclimate/php-test-reporter" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/dhii/data-container-interface" />
-          <root url="file://$MODULE_DIR$/vendor/dhii/data-key-value-aware-interface" />
-          <root url="file://$MODULE_DIR$/vendor/dhii/exception-interface" />
-          <root url="file://$MODULE_DIR$/vendor/dhii/machine-state-machine-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/php-cs-fixer-config" />
           <root url="file://$MODULE_DIR$/vendor/dhii/stringable-interface" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
@@ -32,7 +28,6 @@
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
-          <root url="file://$MODULE_DIR$/vendor/psr/container" />
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/vendor/ptrofimov/xpmock" />
           <root url="file://$MODULE_DIR$/vendor/rebelcode/time-interface" />
@@ -58,10 +53,6 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/codeclimate/php-test-reporter" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/dhii/data-container-interface" />
-          <root url="file://$MODULE_DIR$/vendor/dhii/data-key-value-aware-interface" />
-          <root url="file://$MODULE_DIR$/vendor/dhii/exception-interface" />
-          <root url="file://$MODULE_DIR$/vendor/dhii/machine-state-machine-interface" />
           <root url="file://$MODULE_DIR$/vendor/dhii/php-cs-fixer-config" />
           <root url="file://$MODULE_DIR$/vendor/dhii/stringable-interface" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
@@ -76,7 +67,6 @@
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
-          <root url="file://$MODULE_DIR$/vendor/psr/container" />
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/vendor/ptrofimov/xpmock" />
           <root url="file://$MODULE_DIR$/vendor/rebelcode/time-interface" />
