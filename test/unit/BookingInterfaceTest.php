@@ -53,7 +53,7 @@ class BookingInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'RebelCode\Time\PeriodInterface',
+            'Dhii\Time\PeriodInterface',
             $subject,
             'Test subject does not extend parent interface.'
         );

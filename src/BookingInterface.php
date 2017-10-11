@@ -3,7 +3,7 @@
 namespace RebelCode\Bookings;
 
 use Dhii\Util\String\StringableInterface as Stringable;
-use RebelCode\Time\PeriodInterface;
+use Dhii\Time\PeriodInterface;
 
 /**
  * Something that represents a booking.
