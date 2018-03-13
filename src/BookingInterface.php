@@ -2,8 +2,9 @@
 
 namespace RebelCode\Bookings;
 
-use Dhii\Util\String\StringableInterface as Stringable;
+use Dhii\Data\IdAwareInterface;
 use Dhii\Time\PeriodInterface;
+use Dhii\Util\String\StringableInterface as Stringable;
 
 /**
  * Something that represents a booking.
@@ -15,7 +16,7 @@ use Dhii\Time\PeriodInterface;
  *
  * @since [*next-version*]
  */
-interface BookingInterface extends PeriodInterface
+interface BookingInterface extends IdAwareInterface, PeriodInterface
 {
     /**
      * Retrieves the booking status for this instance.
