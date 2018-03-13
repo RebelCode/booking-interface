@@ -29,6 +29,7 @@ class BookingInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
+                     ->getId()
                      ->getStart()
                      ->getEnd()
                      ->getDuration()
@@ -54,6 +55,12 @@ class BookingInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             'Dhii\Time\PeriodInterface',
+            $subject,
+            'Test subject does not extend parent interface.'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\Data\IdAwareInterface',
             $subject,
             'Test subject does not extend parent interface.'
         );
