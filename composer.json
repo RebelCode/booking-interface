@@ -13,8 +13,8 @@
     "prefer-stable": true,
     "require": {
         "php": "^5.3 | ^7.0",
-        "dhii/time-interface": "dev-develop",
-        "dhii/factory-interface": "0.1-alpha2",
+        "dhii/time-interface": "^0.1-alpha1",
+        "dhii/factory-interface": "^0.1-alpha2",
         "dhii/data-identifiable-interface": "^0.1"
     },
     "require-dev": {
