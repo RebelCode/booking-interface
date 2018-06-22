@@ -64,5 +64,11 @@ class BookingInterfaceTest extends TestCase
             $subject,
             'Test subject does not extend parent interface.'
         );
+
+        $this->assertInstanceOf(
+            'RebelCode\Bookings\ResourceIdAwareInterface',
+            $subject,
+            'Test subject does not extend parent interface.'
+        );
     }
 }
