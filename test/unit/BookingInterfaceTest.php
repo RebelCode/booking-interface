@@ -33,7 +33,8 @@ class BookingInterfaceTest extends TestCase
                      ->getStart()
                      ->getEnd()
                      ->getDuration()
-                     ->getStatus();
+                     ->getStatus()
+                     ->getResourceId();
 
         return $mock->new();
     }
