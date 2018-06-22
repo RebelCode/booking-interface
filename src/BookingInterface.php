@@ -15,6 +15,14 @@ use Dhii\Time\PeriodInterface;
  *
  * @since [*next-version*]
  */
-interface BookingInterface extends IdAwareInterface, PeriodInterface, StatusAwareInterface, ResourceIdAwareInterface
+interface BookingInterface extends
+    /* @since [*next-version*] */
+    IdAwareInterface,
+    /* @since [*next-version*] */
+    PeriodInterface,
+    /* @since [*next-version*] */
+    StatusAwareInterface,
+    /* @since [*next-version*] */
+    ResourceIdAwareInterface
 {
 }
