@@ -16,7 +16,7 @@ interface StatusAwareInterface
      *
      * @since [*next-version*]
      *
-     * @return string|Stringable The status.
+     * @return int|string|Stringable The status.
      */
     public function getStatus();
 }
