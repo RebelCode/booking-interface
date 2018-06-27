@@ -2,22 +2,22 @@
 
 namespace RebelCode\Bookings\UnitTest;
 
-use RebelCode\Bookings\BookingInterface as TestSubject;
 use Xpmock\TestCase;
+use RebelCode\Bookings\ServiceBookingInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */
-class BookingInterfaceTest extends TestCase
+class ServiceBookingInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'RebelCode\Bookings\BookingInterface';
+    const TEST_SUBJECT_CLASSNAME = 'RebelCode\Bookings\ServiceBookingInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -34,7 +34,8 @@ class BookingInterfaceTest extends TestCase
                      ->getEnd()
                      ->getDuration()
                      ->getStatus()
-                     ->getResourceId();
+                     ->getResourceId()
+                     ->getServiceId();
 
         return $mock->new();
     }
@@ -55,19 +56,13 @@ class BookingInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'Dhii\Time\PeriodInterface',
+            'RebelCode\Bookings\BookingInterface',
             $subject,
             'Test subject does not extend parent interface.'
         );
 
         $this->assertInstanceOf(
-            'Dhii\Data\IdAwareInterface',
-            $subject,
-            'Test subject does not extend parent interface.'
-        );
-
-        $this->assertInstanceOf(
-            'RebelCode\Bookings\ResourceIdAwareInterface',
+            'RebelCode\Bookings\ServiceIdAwareInterface',
             $subject,
             'Test subject does not extend parent interface.'
         );
