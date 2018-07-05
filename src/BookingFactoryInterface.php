@@ -40,13 +40,6 @@ interface BookingFactoryInterface extends FactoryInterface
     const K_DATA_END = 'end';
 
     /**
-     * The key for the status in the factory config.
-     *
-     * @since [*next-version*]
-     */
-    const K_DATA_STATUS = 'status';
-
-    /**
      * {@inheritdoc}
      *
      * @since [*next-version*]
