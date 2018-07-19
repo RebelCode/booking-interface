@@ -2,22 +2,15 @@
 
 namespace RebelCode\Bookings;
 
-use Dhii\Factory\FactoryInterface;
+use Dhii\Factory\DataObjectFactoryInterface;
 
 /**
  * Something that can create new booking instances.
  *
  * @since [*next-version*]
  */
-interface BookingFactoryInterface extends FactoryInterface
+interface BookingFactoryInterface extends DataObjectFactoryInterface
 {
-    /**
-     * The key for the booking data in the factory config.
-     *
-     * @since [*next-version*]
-     */
-    const K_DATA = 'data';
-
     /**
      * The key for the ID in the factory config.
      *
