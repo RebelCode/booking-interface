@@ -54,5 +54,11 @@ class BookingFactoryInterfaceTest extends TestCase
             $subject,
             'Test subject does not implement expected interface.'
         );
+
+        $this->assertInstanceOf(
+            'Dhii\Factory\DataObjectFactoryInterface',
+            $subject,
+            'Test subject does not implement expected interface.'
+        );
     }
 }
