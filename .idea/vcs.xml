@@ -2,5 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/dhii/data-identifiable-interface" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/dhii/exception-interface" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/dhii/factory-interface" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/dhii/php-cs-fixer-config" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/dhii/time-interface" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/symfony/debug" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/symfony/filesystem" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vendor/symfony/stopwatch" vcs="Git" />
   </component>
 </project>
