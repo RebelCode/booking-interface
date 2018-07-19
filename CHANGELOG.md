@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `BookingInterface` now extends `ResourceIdAwareInterface`.
 - Removed `BookingInterface#getStatus()` in favor of extending StatusAwareInterface`.
 - Factory config key constants in `BookingFactoryInterface`.
+- `BookingFactoryInterface` extends `DataObjectFactoryInterface`.
 
 ## [0.1-alpha1] - 2018-05-14
 Initial version.
