@@ -8,14 +8,14 @@ use Dhii\Time\PeriodInterface;
 /**
  * Something that represents a particular period of time during which a resource is reserved.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface BookingInterface extends
-    /* @since [*next-version*] */
+    /* @since 0.1 */
     IdAwareInterface,
-    /* @since [*next-version*] */
+    /* @since 0.1 */
     PeriodInterface,
-    /* @since [*next-version*] */
+    /* @since 0.2 */
     ResourceIdsAwareInterface
 {
 }

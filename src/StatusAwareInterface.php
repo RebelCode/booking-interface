@@ -7,14 +7,14 @@ use Dhii\Util\String\StringableInterface as Stringable;
 /**
  * Something that is aware of a booking status.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface StatusAwareInterface
 {
     /**
      * Retrieves the booking status for this instance.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return int|string|Stringable The status.
      */
