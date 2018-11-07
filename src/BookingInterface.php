@@ -16,6 +16,6 @@ interface BookingInterface extends
     /* @since [*next-version*] */
     PeriodInterface,
     /* @since [*next-version*] */
-    ResourceIdAwareInterface
+    ResourceIdsAwareInterface
 {
 }
