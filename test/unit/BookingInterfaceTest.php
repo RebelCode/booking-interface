@@ -34,7 +34,7 @@ class BookingInterfaceTest extends TestCase
                      ->getEnd()
                      ->getDuration()
                      ->getStatus()
-                     ->getResourceId();
+                     ->getResourceIds();
 
         return $mock->new();
     }
@@ -67,7 +67,7 @@ class BookingInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'RebelCode\Bookings\ResourceIdAwareInterface',
+            'RebelCode\Bookings\ResourceIdsAwareInterface',
             $subject,
             'Test subject does not extend parent interface.'
         );

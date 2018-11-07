@@ -3,21 +3,21 @@
 namespace RebelCode\Bookings\UnitTest;
 
 use Xpmock\TestCase;
-use RebelCode\Bookings\ResourceIdAwareInterface as TestSubject;
+use RebelCode\Bookings\ResourceIdsAwareInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */
-class ResourceIdAwareInterfaceTest extends TestCase
+class ResourceIdsAwareInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'RebelCode\Bookings\ResourceIdAwareInterface';
+    const TEST_SUBJECT_CLASSNAME = 'RebelCode\Bookings\ResourceIdsAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -29,7 +29,7 @@ class ResourceIdAwareInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                     ->getResourceId();
+                     ->getResourceIds();
 
         return $mock->new();
     }
