@@ -7,9 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [[*next-version*]] - YYYY-MM-DD
 ### Added
 - `StatusAwareInterface` for awareness of a booking status.
+- `ResourceIdsAwareInterface` for awareness of resource IDs.
 
 ## Changed
-- `BookingInterface` now extends `ResourceIdAwareInterface`.
+- `BookingInterface` now extends `ResourceIdsAwareInterface`.
 - Removed `BookingInterface#getStatus()` in favor of extending StatusAwareInterface`.
 - Factory config key constants in `BookingFactoryInterface`.
 - `BookingFactoryInterface` extends `DataObjectFactoryInterface`.
