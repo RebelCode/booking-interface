@@ -3,6 +3,8 @@
 namespace RebelCode\Bookings;
 
 use Dhii\Util\String\StringableInterface as Stringable;
+use stdClass;
+use Traversable;
 
 /**
  * Something that is aware of an IDs for a bookable resources.
@@ -16,7 +18,7 @@ interface ResourceIdsAwareInterface
      *
      * @since [*next-version*]
      *
-     * @return int[]|string[]|Stringable[] The list of bookable resource IDs.
+     * @return int[]|string[]|Stringable[]|stdClass|Traversable The list of bookable resource IDs.
      */
     public function getResourceIds();
 }
